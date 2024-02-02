@@ -1,0 +1,29 @@
+Source: python-cli-ui
+Section: python
+Priority: optional
+Maintainer: Francescodario Cuzzocrea <bosconovic@gmail.com>
+Build-Depends: debhelper-compat (= 13),
+               dh-python,
+               git <!nocheck>,
+               pybuild-plugin-pyproject,
+               python3-all,
+               python3-all-dev,
+               python3-build <!nocheck>,
+               python3-poetry-core,
+               python3-pytest <!nocheck>,
+               python3-pytest-mock <!nocheck>,
+               python3-setuptools,
+               python3-tomli-w <!nocheck>,
+               python3-virtualenv,
+               python3-colorama
+Standards-Version: 4.6.2
+Homepage: https://your-tools.github.io/python-cli-ui/
+Vcs-Git: https://github.com/your-tools/python-cli-ui.git
+Vcs-Browser: https://github.com/your-tools/python-cli-ui
+Rules-Requires-Root: no
+
+Package: python3-cli-ui
+Architecture: all
+Depends: ${misc:Depends},
+         ${python3:Depends},
+Description: Manage groups of git repositories
